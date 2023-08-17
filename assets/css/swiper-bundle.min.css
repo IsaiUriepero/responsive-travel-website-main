@@ -1,0 +1,77 @@
+/**
+ * Swiper 6.6.2
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * https://swiperjs.com
+ *
+ * Copyright 2014-2021 Vladimir Kharlampidi
+ *
+ * Released under the MIT License
+ *
+ * Released on: May 19, 2021
+ */
+
+@font-face {
+    font-family: swiper-icons;
+    src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  :root {
+    --swiper-theme-color: #007aff;
+  }
+  
+  /* Swiper container styles */
+  .swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  /* ... (Other Swiper container styles) */
+  
+  /* Swiper button styles */
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  }
+  
+  /* ... (Other Swiper button styles) */
+  
+  /* Swiper pagination styles */
+  .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+  }
+  
+  /* ... (Other Swiper pagination styles) */
+  
+  /* Swiper scrollbar styles */
+  .swiper-scrollbar {
+    border-radius: 10px;
+    position: relative;
+    -ms-touch-action: none;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ... (Other Swiper scrollbar styles) */
+  
+  /* Other styles... (omitted for brevity) */
+  
